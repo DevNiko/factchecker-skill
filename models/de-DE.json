@@ -1,0 +1,53 @@
+{
+  "invocation": "fact checker",
+  "intents": [{
+      "name": "StartIntent",
+      "phrases": [
+        "Nochmal",
+        "Start",
+        "Neustart",
+        "Nocheinmal"
+      ]
+    },
+    {
+      "name": "ClaimIntent",
+      "phrases": [
+        "Stimmt es dass {claim}",
+        "Ist das Fakt dass {claim}",
+        "Fakten zum Thema {claim}",
+        "Alle Fakten zum Thema {claim}",
+        "Gib mir Fakten zum Thema {claim}",
+        "Finde die Fakten zu der Behauptung {claim}"
+      ],
+      "inputs": [{
+        "name": "claim",
+        "type": {
+          "alexa": "AMAZON.SearchQuery"
+        }
+      }]
+    }
+  ],
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": [{
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.YesIntent",
+            "samples": ["ja", "yes", "jap", "jo", "jop"]
+          }
+        ]
+      }
+    }
+  }
+}

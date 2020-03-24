@@ -1,0 +1,59 @@
+{
+  "name": "fact-checker",
+  "version": "2.0.2",
+  "description": "A Fact Checker",
+  "main": "src/index.js",
+  "dependencies": {
+    "i18next": "~19.3.3",
+    "jovo-db-filedb": "~3.0.6",
+    "jovo-framework": "~3.0.6",
+    "jovo-platform-alexa": "~3.0.6",
+    "jovo-platform-googleassistant": "~3.0.6",
+    "jovo-plugin-debugger": "~3.0.6",
+    "request": "~2.88.2",
+    "request-promise-native": "~1.0.8"
+  },
+  "devDependencies": {
+    "@types/express": "~4.17.3",
+    "@types/jest": "~25.1.4",
+    "@types/lodash": "~4.14.149",
+    "@types/node": "~13.9.3",
+    "@types/request-promise-native": "~1.0.17",
+    "@types/socket.io-client": "~1.4.32",
+    "eslint": "~6.8.0",
+    "gulp": "~4.0.2",
+    "gulp-install": "^1.1.0",
+    "gulp-run-command": "~0.0.10",
+    "gulp-zip": "~5.0.1",
+    "install": "~0.13.0",
+    "jest": "~25.1.0",
+    "jovo-cli": "~3.0.5",
+    "npm": "~6.14.3",
+    "source-map-support": "~0.5.16",
+    "ts-jest": "~25.2.1",
+    "tslint": "~6.1.0",
+    "typedoc": "~0.17.3",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "tslint": "tslint -p tsconfig.json -c tslint.json",
+    "tsc": "tsc",
+    "tscw": "tsc --watch",
+    "typedoc": "typedoc --out ./docs ./ --mode file",
+    "test": "jest",
+    "bundle": "gulp --gulpfile node_modules/jovo-framework/gulpfile.js build-ts --cwd ./",
+    "start": "npm run tsc && jovo run",
+    "launch": "npm start -- --launch",
+    "deploy": "jovo build && jovo deploy -p alexaSkill -l de-DE --target all"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "DevNiko",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

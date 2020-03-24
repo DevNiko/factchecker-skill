@@ -1,0 +1,24 @@
+{
+  "translation": {
+    "welcome": {
+      "speech": "Hallo, Welche Behauptung wollen wir überprüfen",
+      "welcome_repromt_1": "Sage Stimmt es dass Und dann die Behauptung"
+    },
+    "claimintent": {
+      "found_fact": "Ich habe folgenden Fakt zu dieser Behauptung gefunden",
+      "found_facts": "Ich habe {{count_found_facts}} zu dieser Behauptung gefunden",
+      "tell_fact": "Folgende Fakten habe ich gefunden: {{fact}}",
+      "no_fact_found": "Ich habe leider keine Fakte zu dieser Behauptung gefunden. Versuche es anders zu formulieren. Benutze wichtige Personen oder Unternehmen Namen"
+    },
+    "AlexaSkill": {
+      "translation": {
+        "goodbye": "Feel free to rate this skill, have a wonderful day."
+      }
+    },
+    "GoogleAction": {
+      "translation": {
+        "goodbye": "/"
+      }
+    }
+  }
+}
