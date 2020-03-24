@@ -5,3 +5,4 @@ bundle
 platforms
 bundle.zip
 .env
+.vscode
