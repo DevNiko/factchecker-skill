@@ -6,3 +6,4 @@ platforms
 bundle.zip
 .env
 .vscode
+db.json
