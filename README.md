@@ -1,4 +1,4 @@
-## Fact Checker Skill / App
+## Fact Checker Voice App
 
 Fact Checker is a hobby project and is only maintained by me (the only developer so far).
 
